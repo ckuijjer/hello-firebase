@@ -4,7 +4,7 @@ The tiniest proof of concept that shows how [Firebase Realtime Database](https:/
 
 ## To start
 
-Create a file `firebase.config.js` exporting the config settings for your firebase application (See Project Settings > Add Firebase to your web app). For example:
+Create a file `src/firebase.config.js` exporting the config settings for your firebase application (See Project Settings > Add Firebase to your web app). For example:
 
 ```
 export default {
