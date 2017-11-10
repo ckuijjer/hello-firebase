@@ -19,7 +19,7 @@ class App extends Component {
     firebase.initializeApp(firebaseConfig);
     this.database = firebase.database();
     this.database.ref('/').on('value', snapshot => {
-      const data = snapshot.val();
+      const data = snapshot.val() || {};
       const keys = Object.keys(data);
 
       const messages = keys.map(key => data[key]);
@@ -62,6 +62,8 @@ class App extends Component {
       list: {
         flex: 1,
         border: '1px solid #eee',
+        overflow: 'scroll',
+        marginBottom: 16,
       },
       inputs: {
         display: 'flex',
@@ -69,8 +71,6 @@ class App extends Component {
       },
       input: {
         marginBottom: 16,
-        marginLeft: 16,
-        marginRight: 16,
       },
     };
 
