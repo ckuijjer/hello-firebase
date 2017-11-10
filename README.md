@@ -17,7 +17,7 @@ export default {
 };
 ```
 
-Set the database rules to allow public read and write access (don't forget to put it back):
+In the Firebase console set the database rules to allow public read and write access (don't forget to put it back):
 
 ```
 // These rules give anyone, even people who are not users of your app,
